@@ -2,13 +2,65 @@
 
 {% block content %} 
 
+<h1>HOMEPAGE</h1>
+
 {{self.banner_title}} 
 <br>
-{{self.banner_tekst|richtext}} 
+
+{{self.banner_subtitle}}
 <br>
 
 {% image self.banner_image fill-300x300 as img%}
-
 <img src="{{img.url}}" alt="">
+<br>
+<br>
+
+<h1>{{self.section_about_title}}</h1>
+<br>
+
+{{self.section_about_subtitle}}
+<br>
+
+{{self.banner_tekst|richtext}} 
+<br>
+
+{% image self.section_about_image fill-300x300 as img2%}
+<img src="{{img2.url}}" alt="">
+<br>
+<br>
+
+<h1>{{self.section_apartments_title}}</h1>
+<br>
+
+{{self.section_apartments_subtitle}}
+<br>
+<br>
+
+<h1>{{self.section_services_title}}</h1>
+<br>
+
+{{self.section_services_subtitle}}
+<br>
+<br>
+
+<h1>{{self.section_special_offers_title}}</h1>
+<br>
+
+{{self.section_special_offers_subtitle}}
+<br>
+<br>
+
+<h1>{{self.section_testimonial_title}}</h1>
+<br>
+
+{{self.section_testimonial_subtitle}}
+<br>
+<br>
+
+<h1>{{self.section_newsletter_title}}</h1>
+<br>
+
+{{self.section_newsletter_subtitle}}
+<br>
 
 {% endblock %}
